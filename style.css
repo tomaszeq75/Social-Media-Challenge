@@ -30,7 +30,7 @@ html {
     justify-content: space-evenly;
 }
 
-.social-nick i {
+.fa-facebook-square {
     color: #008cfc;
     font-size: 30px;
     margin-right: 14px;
@@ -45,7 +45,7 @@ html {
 
 .social-counter {
     color: white;
-    font-size: 65px;
+    font-size: 70px;
 }
 
 .social-followers {
@@ -61,8 +61,44 @@ html {
     margin-right: 5px;
     position: absolute;
     left: -12px;
-    bottom: -4px;
+    bottom: -5px;
 }
+
+.main-small-card {
+    margin: 20px;
+    width: 330px;
+    height: 160px;
+    background-color: #202741;
+
+}
+
+.small-card-content {
+    padding: 30px;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    color: white;
+    font-size: 40px;
+}
+
+.small-social-change {
+    position: relative;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.small-social-change i {
+    margin-right: 5px;
+    position: absolute;
+    left: -12px;
+    bottom: -5px;
+}
+
 
 .grey {
     color: #8c98c9;
@@ -75,4 +111,3 @@ html {
 img {
     margin: 20px;
 }
-
