@@ -36,10 +36,11 @@ body {
 
 .cards-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .main-card {
-    margin: 20px;
+    margin: 0;
     background-color: #252b43;
     width: 330px;
     height: 280px;
@@ -48,9 +49,26 @@ body {
 }
 
 .decoration-line {
-    background-color: #008df8;
     height: 5px;
 }
+
+.first {
+    background-color: #008df8;
+}
+
+.second {
+    background-color: #00a0f5;
+}
+
+.third {
+    background: linear-gradient(70deg, #fec45e, #e24396);
+}
+
+.forth {
+    background-color: #c70020;
+}
+
+
 
 .card-content {
     height: 100%;
@@ -60,10 +78,28 @@ body {
     justify-content: space-evenly;
 }
 
-.fa-facebook-square {
-    color: #028bf4;
+.fa-facebook-square, .fa-twitter, .fa-circle, .rounded-box {
     font-size: 30px;
     margin-right: 14px;
+}
+
+.rounded-box {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: linear-gradient(50deg, #fec45e, #e24396);
+}
+
+.fa-facebook-square {
+    color: #028bf4;
+}
+
+.fa-twitter {
+    color: #00a0f5;
+}
+
+.fa-circle {
+    color: #c70020;
 }
 
 .social-nick {
@@ -76,6 +112,7 @@ body {
 .social-counter {
     color: white;
     font-size: 70px;
+    text-align: center;
 }
 
 .social-followers {
@@ -154,7 +191,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 40px 0 60px;
 }
 
 .header-right {
@@ -163,7 +200,7 @@ body {
 }
 
 .header-left .title {
-    font-size: 34px;
+    font-size: 36px;
     margin-left: 16px;
     margin-bottom: 8px;
     color: white;
