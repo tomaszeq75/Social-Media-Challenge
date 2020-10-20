@@ -24,9 +24,23 @@ body {
     z-index: -1;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 1450px;
+    height: 1036px;
+}
+
+.cards-container {
+    display: flex;
+}
+
 .main-card {
     margin: 20px;
-    background-color: #202741;
+    background-color: #252b43;
     width: 330px;
     height: 280px;
     border-radius: 6px;
@@ -47,14 +61,14 @@ body {
 }
 
 .fa-facebook-square {
-    color: #008cfc;
+    color: #028bf4;
     font-size: 30px;
     margin-right: 14px;
 }
 
 .social-nick {
     display: flex;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     align-items: center;
 }
@@ -70,7 +84,7 @@ body {
 
 .social-change {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .social-change i {
@@ -84,7 +98,7 @@ body {
     margin: 20px;
     width: 330px;
     height: 160px;
-    background-color: #202741;
+    background-color: #252b43;
 }
 
 .small-card-content {
@@ -109,15 +123,14 @@ body {
 
 .small-social-change {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: auto;
 }
 
 .small-social-change i {
-    margin-right: 5px;
     position: absolute;
-    left: -12px;
-    bottom: -5px;
+    left: -14px;
+    bottom: -6px;
 }
 
 .label {
@@ -141,6 +154,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 .header-right {
