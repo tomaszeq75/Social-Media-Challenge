@@ -25,6 +25,7 @@ body {
 }
 
 .main {
+    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -38,17 +39,25 @@ body {
 .cards-container,
 .small-cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.main-card {
-    margin: 16px 4px;
+.main-card,
+.main-small-card {
+    margin: 16px;
     background-color: #252b43;
     width: 330px;
-    height: 280px;
     border-radius: 6px;
     overflow: hidden;
+}
+
+.main-card {
+    height: 280px;
+}
+
+.main-small-card {
+    height: 160px;
 }
 
 .decoration-line {
@@ -130,17 +139,10 @@ body {
 
 .small-cards-title {
     font-size: 32px;
-    margin: 54px 0 26px;
+    margin: 54px 16px 26px;
     color: white;
 }
 
-.main-small-card {
-    width: 330px;
-    height: 160px;
-    background-color: #252b43;
-    border-radius: 6px;
-    margin: 16px 4px;
-}
 
 .small-card-content {
     height: 100%;
@@ -207,10 +209,15 @@ body {
     margin: 40px 0 60px;
 }
 
+.header-label {
+    font-size: 18px;
+}
+
 .header-right {
+    width: 165px;
     display: flex;
     align-items: center;
-    width: 165px;
+    margin-right: 20px;
 }
 
 hr {
@@ -222,6 +229,7 @@ hr {
 
 .header-left {
     width: 410px;
+    margin-left: 20px;
 }
 
 .title {
@@ -254,6 +262,7 @@ hr {
     background: linear-gradient(70deg, #2f94e2, #30d68a);
     /* -webkit-transition: .4s; */
     transition: 0.4s;
+    width: 60px;
     border-radius: 28px;
 }
 
@@ -270,24 +279,33 @@ hr {
     border-radius: 50%;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     /* -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px); */
     transform: translateX(26px);
 }
 
 /* mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .main-container {
         width: 400px;
     }
 
     .title {
         margin-left: 0;
+        font-size: 24px
+    }
+
+    .small-cards-title {
+        font-size: 24px;
+        margin-left: 10px;
+        margin: 30px 20px;
     }
 
     .header {
+        width: 330px;
         flex-direction: column;
+        margin: 40px auto 30px;
     }
 
     hr {
@@ -297,11 +315,58 @@ input:checked + .slider:before {
     .header-right {
         width: 100%;
         justify-content: space-between;
+        margin: 0;
+    }
+
+    .header-left {
+        margin: 0;
+        width: 100%;
     }
 
     .cards-container,
     .small-cards-container {
         justify-content: center;
+    }
+
+    .switch {
+        margin-right: 10px;
+    }
+
+    .header-label {
+        font-size: 14px;
+    }
+
+    .main-card {
+        height: 216px;
+        margin: 12px;
+    }
+
+    .main-small-card {
+        height: 124px;
+        margin: 8px;
+    }
+
+    .social-counter{
+        font-size: 58px;
+    }
+
+    .social-followers{
+        font-size: 12px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+
+    .social-nick,
+    .social-followers,
+    .social-change,
+    .small-social-change {
+        font-size: 12px;
+    }
+
+    .counter {
+        font-size: 32px;
     }
 }
 
