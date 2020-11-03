@@ -4,40 +4,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Panel</title>
+    <title dark>Social Panel</title dark>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/418a544271.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="background-bar"></div>
+    <div class="background-bar .dark"></div>
     <div class="main">
         <div class="main-container">
             <div class="header">
                 <div class="header-left">
-                    <div class="title">Social Media Dashboard</div>
-                    <div class="header-label grey">Total Followers: 23,004</div>
+                    <div class="title dark">Social Media Dashboard</div>
+                    <div class="header-label grey dark">Total Followers: 23,004</div>
                 </div>
-                <hr>
+                <hr class="dark">
                 <div class="header-right">
-                    <span class="header-label grey">Dark Mode</span>
-                    <label class="switch">
-                        <input type="checkbox" unchecked />
+                    <span class="header-label grey dark">Dark Mode</span>
+                    <label class="switch" onclick="themeSwitch()">
+                        <input type="checkbox" id="checkbox" unchecked />
                         <span class="slider"></span>
                     </label>
                 </div>
             </div>
             <!-- big cards container -->
             <div class="cards-container">
-                <div class="main-card ">
+                <div class="main-card dark ">
                     <div class="decoration-line first"></div>
                     <div class="card-content">
-                        <div class="social-nick grey">
+                        <div class="social-nick grey dark">
                             <i class="fab fa-facebook-square "></i>@nathanf
                         </div>
                         <div>
-                            <div class="social-counter">1987</div>
-                            <div class="social-followers grey">
+                            <div class="social-counter dark">1987</div>
+                            <div class="social-followers grey dark">
                                 FOLLOWERS
                             </div>
                         </div>
@@ -46,15 +46,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-card ">
+                <div class="main-card dark ">
                     <div class="decoration-line second"></div>
                     <div class="card-content">
-                        <div class="social-nick grey">
+                        <div class="social-nick grey dark">
                             <i class="fab fa-twitter"></i>@nathanf
                         </div>
                         <div>
-                            <div class="social-counter">1044</div>
-                            <div class="social-followers grey">
+                            <div class="social-counter dark">1044</div>
+                            <div class="social-followers grey dark">
                                 FOLLOWERS
                             </div>
                         </div>
@@ -63,15 +63,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-card ">
+                <div class="main-card dark ">
                     <div class="decoration-line third"></div>
                     <div class="card-content">
-                        <div class="social-nick grey">
+                        <div class="social-nick grey dark">
                             <div class="rounded-box"></div>@realnathanf
                         </div>
                         <div>
-                            <div class="social-counter">11k</div>
-                            <div class="social-followers grey">
+                            <div class="social-counter dark">11k</div>
+                            <div class="social-followers grey dark">
                                 FOLLOWERS
                             </div>
                         </div>
@@ -80,15 +80,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-card ">
+                <div class="main-card dark ">
                     <div class="decoration-line forth"></div>
                     <div class="card-content">
-                        <div class="social-nick grey">
+                        <div class="social-nick grey dark">
                             <i class="fas fa-circle"></i> Nathan F.
                         </div>
                         <div>
-                            <div class="social-counter">8239</div>
-                            <div class="social-followers grey">
+                            <div class="social-counter dark">8239</div>
+                            <div class="social-followers grey dark">
                                 SUBSCRIBERS
                             </div>
                         </div>
@@ -98,107 +98,107 @@
                     </div>
                 </div>
             </div>
-            <div class="small-cards-title">
+            <div class="small-cards-title dark">
                 Overview - Today
             </div>
             <!-- small cards container -->
             <div class="small-cards-container">
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Page Views</div>
+                            <div class="label grey dark">Page Views</div>
                             <div class="icon"><i class="fab fa-facebook-square"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">87</div>
+                            <div class="counter dark">87</div>
                             <div class="small-social-change green"><i class="fas fa-sort-up"></i>3%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Likes</div>
+                            <div class="label grey dark">Likes</div>
                             <div class="icon"><i class="fab fa-facebook-square"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">52</div>
+                            <div class="counter dark">52</div>
                             <div class="small-social-change red"><i class="fas fa-sort-down"></i>2%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Likes</div>
+                            <div class="label grey dark">Likes</div>
                             <div class="icon">
                                 <div class="rounded-box"></div>
                             </div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">5462</div>
+                            <div class="counter dark">5462</div>
                             <div class="small-social-change green"><i class="fas fa-sort-up"></i>2257%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Profile Views</div>
+                            <div class="label grey dark">Profile Views</div>
                             <div class="icon">
                                 <div class="rounded-box"></div>
                             </div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">52k</div>
+                            <div class="counter dark">52k</div>
                             <div class="small-social-change green"><i class="fas fa-sort-up"></i>1375%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Retweets</div>
+                            <div class="label grey dark">Retweets</div>
                             <div class="icon"><i class="fab fa-twitter"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">117</div>
+                            <div class="counter dark">117</div>
                             <div class="small-social-change green"><i class="fas fa-sort-up"></i>303%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Likes</div>
+                            <div class="label grey dark">Likes</div>
                             <div class="icon"><i class="fab fa-twitter"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">507</div>
+                            <div class="counter dark">507</div>
                             <div class="small-social-change green"><i class="fas fa-sort-up"></i>553%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Likes</div>
+                            <div class="label grey dark">Likes</div>
                             <div class="icon"><i class="fas fa-circle"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">107</div>
+                            <div class="counter dark">107</div>
                             <div class="small-social-change red"><i class="fas fa-sort-down"></i>19%</div>
                         </div>
                     </div>
                 </div>
-                <div class="main-small-card">
+                <div class="main-small-card dark">
                     <div class="small-card-content">
                         <div class="top">
-                            <div class="label grey">Total Views</div>
+                            <div class="label grey dark">Total Views</div>
                             <div class="icon"><i class="fas fa-circle"></i></div>
                         </div>
                         <div class="bottom">
-                            <div class="counter">1407</div>
+                            <div class="counter dark">1407</div>
                             <div class="small-social-change red"><i class="fas fa-sort-down"></i>12%</div>
                         </div>
                     </div>

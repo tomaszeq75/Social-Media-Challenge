@@ -376,12 +376,12 @@ img {
 }
 
 /* light theme */
-.background-bar.light {
-    background-color: #f7f9ff;
-}
-
 html.light {
     background-color: white;
+}
+
+.background-bar.light {
+    background-color: #f7f9ff;
 }
 
 .main-card.light,
