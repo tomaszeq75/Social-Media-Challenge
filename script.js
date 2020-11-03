@@ -1,6 +1,12 @@
 function themeSwitch() {
     const switchState = document.getElementById("checkbox").checked;
-    elements = document.querySelectorAll(".dark");
+    const elements = document.querySelectorAll(".dark");
     elements.forEach(item => item.classList.toggle('light'));
-    console.log(elements[0]);
+
+    const headerLabel = document.getElementById('mode')
+    if (switchState == true) {
+        headerLabel.innerText = 'Light Mode'
+    } else {
+        headerLabel.innerText = 'Dark Mode'
+    }
 }

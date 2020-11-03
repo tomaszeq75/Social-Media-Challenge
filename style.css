@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+.dark {
+    transition: all 0.5s ease;
+}
+
 .background-bar {
     width: 100%;
     height: 320px;
@@ -46,10 +50,16 @@ body {
 .main-card,
 .main-small-card {
     margin: 16px;
-    background-color: #252b43;
+    background-color: #202741;
     width: 330px;
     border-radius: 6px;
     overflow: hidden;
+}
+
+.main-card:hover,
+.main-small-card:hover {
+    background-color: #303751;
+    box-shadow: 0px 0px 10px #008df8;
 }
 
 .main-card {
@@ -214,7 +224,7 @@ body {
 }
 
 .header-right {
-    width: 165px;
+    width: 168px;
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -222,7 +232,7 @@ body {
 
 hr {
     width: 100%;
-    border: 1px solid #252b43;
+    border: 1px solid #202741;
     margin-top: 30px;
     display: none;
 }
@@ -286,7 +296,7 @@ input:checked+.slider:before {
 }
 
 /* mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
     .main-container {
         width: 400px;
     }
@@ -387,6 +397,11 @@ html.light {
 .main-card.light,
 .main-small-card.light {
     background-color: #f1f3fa;
+}
+
+.main-card.light:hover,
+.main-small-card.light:hover {
+    background-color: #e1e3ea;
 }
 
 .social-counter.light,
