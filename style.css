@@ -346,11 +346,11 @@ input:checked+.slider:before {
         margin: 8px;
     }
 
-    .social-counter{
+    .social-counter {
         font-size: 58px;
     }
 
-    .social-followers{
+    .social-followers {
         font-size: 12px;
     }
 
@@ -373,4 +373,33 @@ input:checked+.slider:before {
 /* temp */
 img {
     margin: 20px;
+}
+
+/* light theme */
+.background-bar.light {
+    background-color: #f7f9ff;
+}
+
+html.light {
+    background-color: white;
+}
+
+.main-card.light,
+.main-small-card.light {
+    background-color: #f1f3fa;
+}
+
+.social-counter.light,
+.title.light, 
+.counter.light {
+    color: #1d1f29;
+}
+
+.small-cards-title.light,
+.grey.light {
+    color: #63687d;
+}
+
+hr.light {
+    border-color: #63687d;
 }
