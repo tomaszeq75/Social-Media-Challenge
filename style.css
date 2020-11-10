@@ -405,7 +405,7 @@ html.light {
 }
 
 .social-counter.light,
-.title.light, 
+.title.light,
 .counter.light {
     color: #1d1f29;
 }
@@ -417,4 +417,30 @@ html.light {
 
 hr.light {
     border-color: #63687d;
+}
+
+/* tmp świecący pasek */
+.main-card {
+    position: relative;
+    /* overflow: visible; */
+}
+
+.main-card::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 5px;
+    left: -2px;
+    right: -2px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px #ff03f2;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.main-card:hover::before {
+    overflow: visible;
+    z-index: 10;
+    opacity: 1;
+    /* box-shadow: 0px 0px 10px #ff03f2; */
 }
